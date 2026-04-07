@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <body>
+    <form method="post">
+      <input value="csrf-order-token" name="_csrf" type="hidden">
+      <label>
+        <input name="CheckoutForm[paymentId]" type="radio" value="11">
+        信用卡
+      </label>
+      <label>
+        <input value="12" name="CheckoutForm[paymentId]" type="radio">
+        ATM 轉帳
+      </label>
+      <label>
+        <input value="21" type="radio" name="CheckoutForm[shipmentId]">
+        郵寄
+      </label>
+      <label>
+        <input name="CheckoutForm[shipmentId]" value="22" type="radio">
+        ibon 取票
+      </label>
+      <input name="CheckoutForm[agree]" type="checkbox">
+      <button type="submit">確認付款</button>
+    </form>
+  </body>
+</html>
