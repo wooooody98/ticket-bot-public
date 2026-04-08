@@ -1,0 +1,21 @@
+[package]
+name = "ticket-bot2"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Rust prototype for the API-mode portions of ticket-bot"
+
+[dependencies]
+anyhow = "1.0"
+clap = { version = "4.5", features = ["derive"] }
+dotenvy = "0.15"
+rand = "0.8"
+regex = "1.11"
+rquest = { version = "2.0", features = ["brotli", "cookies", "deflate", "gzip", "json"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+serde_yaml = "0.9"
+tokio = { version = "1.44", features = ["macros", "process", "rt-multi-thread", "signal", "time"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "fmt"] }
+uuid = { version = "1.8", features = ["v4"] }

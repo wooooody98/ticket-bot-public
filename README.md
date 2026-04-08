@@ -70,6 +70,7 @@ playwright install chromium
 - 請從 `config.yaml.example`、`config.local.example.yaml`、`config.cloud.example.yaml` 或 `config.aws-tokyo.example.yaml` 複製成你自己的設定檔。
 - Docker 使用者可從 `docker-compose.example.yml` 起步。
 - 若要從 private repo 匯出公開版快照，請參考 `OPEN_SOURCE_RELEASE.md` 與 `scripts/release/export_public_snapshot.sh`。
+- `ticket-bot2/` 是實驗性 Rust API watcher 參考實作；目前未接回 Python 主線混合模式，請先當 prototype / reference implementation 看待。
 
 ## 快速開始
 
